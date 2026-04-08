@@ -1,0 +1,57 @@
+---
+const PHONE = "+41793940167";
+---
+ 
+<section class="py-16 md:py-24 bg-secondary">
+  <div class="container">
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <h2 class="font-display text-2xl md:text-3xl lg:text-4xl font-bold text-foreground mb-6">
+          Qu'est-ce que la reboutologie&nbsp;?
+        </h2>
+        <p class="font-body text-muted-foreground text-lg leading-relaxed mb-6">
+          La reboutologie est une approche manuelle traditionnelle visant à soulager les tensions, à libérer certaines zones bloquées et à améliorer le confort corporel au quotidien.
+        </p>
+        <p class="font-body text-muted-foreground text-lg leading-relaxed mb-6">
+          Cette pratique s'appuie sur des gestes précis, transmis de longue date, pour agir sur les muscles, les tendons et les articulations. L'objectif&nbsp;: vous aider à retrouver un meilleur équilibre physique.
+        </p>
+        <div class="bg-sage-light rounded-2xl p-6 mb-8">
+          <p class="font-display text-lg font-semibold text-sage-dark italic">
+            «&nbsp;Chaque séance est adaptée à votre corps, à vos tensions et à votre ressenti.&nbsp;»
+          </p>
+        </div>
+        <div class="flex flex-col sm:flex-row gap-3">
+          <a
+            href={`tel:${PHONE}`}
+            class="inline-flex items-center justify-center gap-2 bg-cta hover:bg-cta-hover text-cta-foreground font-body font-medium text-base px-6 py-3 rounded-lg transition-colors"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+            Appeler maintenant
+          </a>
+          <a
+            href={`tel:${PHONE}`}
+            class="inline-flex items-center justify-center gap-2 bg-transparent border border-cta text-cta hover:bg-cta hover:text-cta-foreground font-body font-medium text-base px-6 py-3 rounded-lg transition-colors"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>
+            </svg>
+            Prendre rendez-vous
+          </a>
+        </div>
+      </div>
+      <div class="rounded-2xl overflow-hidden shadow-lg">
+        <img
+          src="/images/hero-cabinet.webp"
+          alt="Séance de reboutologie à Genève"
+          class="w-full h-auto object-cover aspect-[4/3]"
+          width="640"
+          height="480"
+          loading="lazy"
+          decoding="async"
+        />
+      </div>
+    </div>
+  </div>
+</section>

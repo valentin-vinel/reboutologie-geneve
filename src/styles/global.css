@@ -1,0 +1,54 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;500;600;700&display=swap'); */
+
+@import "tailwindcss";
+
+@theme {
+  --color-background: hsl(40 33% 97%);
+  --color-foreground: hsl(220 10% 20%);
+  --color-card: hsl(40 30% 95%);
+  --color-card-foreground: hsl(220 10% 20%);
+  --color-primary: hsl(143 18% 42%);
+  --color-primary-foreground: hsl(40 33% 97%);
+  --color-secondary: hsl(35 30% 92%);
+  --color-secondary-foreground: hsl(220 10% 20%);
+  --color-muted: hsl(35 20% 93%);
+  --color-muted-foreground: hsl(220 8% 25%);
+  --color-accent: hsl(143 18% 42%);
+  --color-accent-foreground: hsl(40 33% 97%);
+  --color-border: hsl(35 20% 88%);
+  --color-input: hsl(35 20% 88%);
+  --color-ring: hsl(143 18% 42%);
+  --color-cta: hsl(143 25% 38%);
+  --color-cta-foreground: hsl(0 0% 100%);
+  --color-cta-hover: hsl(143 28% 32%);
+  --color-warm: hsl(30 40% 96%);
+  --color-warm-dark: hsl(35 25% 90%);
+  --color-sage: hsl(143 18% 42%);
+  --color-sage-light: hsl(143 15% 90%);
+  --color-sage-dark: hsl(143 20% 25%);
+  --color-anthracite: hsl(220 10% 25%);
+  --color-anthracite-light: hsl(220 8% 46%);
+
+  --font-display: 'Playfair Display', serif;
+  --font-body: 'Source Sans 3', sans-serif;
+
+  --radius: 0.75rem;
+}
+
+@layer base {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-body);
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+  }
+}

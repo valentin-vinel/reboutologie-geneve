@@ -1,17 +1,36 @@
 ---
-
+import Layout from '../layouts/Layout.astro';
+import StickyHeader from '../components/StickyHeader.astro';
+import StickyMobileCTA from '../components/StickyMobileCTA.astro';
+import HeroSection from '../components/HeroSection.astro';
+import ProblemsSection from '../components/ProblemsSection.astro';
+import ForWhoSection from '../components/ForWhoSection.astro';
+import WhatIsSection from '../components/WhatIsSection.astro';
+import WhyChooseSection from '../components/WhyChooseSection.astro';
+import InsuranceSection from '../components/InsuranceSection.astro';
+import TestimonialsSection from '../components/TestimonialsSection.astro';
+import HowItWorksSection from '../components/HowItWorksSection.astro';
+import LocationSection from '../components/LocationSection.astro';
+import FAQSection from '../components/FAQSection.astro';
+import FinalCTASection from '../components/FinalCTASection.astro';
+import Footer from '../components/Footer.astro';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout>
+  <StickyHeader />
+  <main>
+    <HeroSection />
+    <ProblemsSection />
+    <ForWhoSection />
+    <WhatIsSection />
+    <WhyChooseSection />
+    <InsuranceSection />
+    <TestimonialsSection />
+    <HowItWorksSection />
+    <LocationSection />
+    <FAQSection />
+    <FinalCTASection />
+  </main>
+  <Footer />
+  <StickyMobileCTA />
+</Layout>

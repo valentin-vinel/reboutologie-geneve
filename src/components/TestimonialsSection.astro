@@ -1,0 +1,58 @@
+---
+const testimonials = [
+  {
+    name: "Marie L.",
+    text: "Après deux séances, mes douleurs de dos se sont nettement atténuées. Un vrai soulagement après des mois de tensions.",
+  },
+  {
+    name: "Pierre D.",
+    text: "Mes migraines ont considérablement diminué. Laurianne est à l'écoute et très professionnelle.",
+  },
+  {
+    name: "Sophie R.",
+    text: "Une sensation de légèreté incroyable après chaque séance. Je recommande à 100%.",
+  },
+  {
+    name: "Jean-Marc B.",
+    text: "J'avais les épaules complètement bloquées. En quelques séances, j'ai retrouvé une vraie mobilité.",
+  },
+  {
+    name: "Claire M.",
+    text: "Approche bienveillante et efficace. Le cabinet est très agréable, on se sent en confiance.",
+  },
+  {
+    name: "Thomas H.",
+    text: "Stress et tensions accumulés pendant des mois. Laurianne a su identifier les blocages et me soulager durablement.",
+  },
+];
+---
+ 
+<section class="py-16 md:py-24 bg-secondary">
+  <div class="container">
+    <h2 class="font-display text-2xl md:text-3xl lg:text-4xl font-bold text-foreground text-center mb-4">
+      Ce que disent nos patients
+    </h2>
+    <p class="text-center text-muted-foreground font-body text-lg mb-12">
+      De nombreux retours positifs de patients à Genève
+    </p>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {testimonials.map((t) => (
+        <div class="bg-background rounded-2xl p-6 shadow-sm">
+          <div class="flex gap-1 mb-4">
+            {Array.from({ length: 5 }).map(() => (
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-cta">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+              </svg>
+            ))}
+          </div>
+          <p class="font-body text-foreground leading-relaxed mb-4 italic">
+            «&nbsp;{t.text}&nbsp;»
+          </p>
+          <span class="font-body font-semibold text-muted-foreground text-sm">
+            — {t.name}
+          </span>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

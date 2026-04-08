@@ -1,0 +1,64 @@
+---
+const faqs = [
+  {
+    q: "Qu'est-ce que la reboutologie ?",
+    a: "La reboutologie est une approche manuelle traditionnelle qui vise à soulager les tensions musculaires, articulaires et tendineuses. Elle utilise des gestes précis pour aider à retrouver un meilleur confort corporel."
+  },
+  {
+    q: "À qui s'adresse une séance de reboutologie ?",
+    a: "La reboutologie s'adresse à toute personne ressentant des tensions, douleurs musculaires, blocages, raideurs ou inconfort physique. Elle convient aussi aux personnes stressées souhaitant retrouver un bien-être corporel."
+  },
+  {
+    q: "Combien de temps dure une séance ?",
+    a: "Une séance dure généralement entre 45 minutes et 1 heure, en fonction de vos besoins et des zones à travailler. Un temps d'échange est prévu en début de séance."
+  },
+  {
+    q: "Est-ce remboursé par l'assurance ?",
+    a: "Laurianne Vibert est agréée ASCA. Selon votre assurance complémentaire, une partie ou la totalité des séances peut être prise en charge. Renseignez-vous auprès de votre assureur."
+  },
+  {
+    q: "Où se situe le cabinet à Genève ?",
+    a: "Le cabinet est situé au Rue Pedro-Meylan 1, 1208 Genève, au 7ème étage de l'espace Human4human Coaching & Thérapies, dans le quartier de Champel."
+  },
+  {
+    q: "Comment prendre rendez-vous ?",
+    a: "Vous pouvez prendre rendez-vous directement par téléphone au +41 79 394 01 67. Le cabinet est ouvert du mardi au vendredi de 9h30 à 20h00 et le samedi de 9h30 à 16h00."
+  },
+  {
+    q: "Puis-je appeler avant de réserver ?",
+    a: "Bien sûr ! N'hésitez pas à appeler pour poser toutes vos questions avant de prendre rendez-vous. Laurianne se fera un plaisir de vous renseigner."
+  },
+];
+---
+ 
+<section class="py-16 md:py-24 bg-background">
+  <div class="container max-w-3xl">
+    <h2 class="font-display text-2xl md:text-3xl lg:text-4xl font-bold text-foreground text-center mb-12">
+      Questions fréquentes
+    </h2>
+    <div class="space-y-3">
+      {faqs.map((faq) => (
+        <details class="group bg-card rounded-2xl px-6 shadow-sm">
+          <summary class="flex items-center justify-between gap-4 font-display text-lg font-semibold text-foreground cursor-pointer list-none py-5 hover:text-cta transition-colors">
+            {faq.q}
+            <svg
+              class="w-5 h-5 shrink-0 text-muted-foreground transition-transform duration-200 group-open:rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <polyline points="6 9 12 15 18 9" />
+            </svg>
+          </summary>
+          <div class="font-body text-muted-foreground text-base leading-relaxed pb-5 border-t border-border pt-4">
+            {faq.a}
+          </div>
+        </details>
+      ))}
+    </div>
+  </div>
+</section>

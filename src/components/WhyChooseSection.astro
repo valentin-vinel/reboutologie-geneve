@@ -24,7 +24,7 @@ const qualities = [
 <section class="py-16 md:py-24 bg-background">
   <div class="container">
     <h2 class="font-display text-2xl md:text-3xl lg:text-4xl font-bold text-foreground text-center mb-12">
-      Pourquoi choisir Laurianne Vibert&nbsp;?
+      Pourquoi choisir Laurianne Vibert ?
     </h2>
     <div class="max-w-4xl mx-auto text-center">
  
@@ -33,7 +33,7 @@ const qualities = [
         <img
           src="/images/laurianne-portrait.webp"
           alt="Laurianne Vibert, reboutologue à Genève en séance"
-          class="w-full h-auto object-cover aspect-[3/4]"
+          class="w-full h-auto object-cover aspect-3/4"
           width="480"
           height="640"
           loading="lazy"
@@ -44,6 +44,7 @@ const qualities = [
       <!-- Numéro de téléphone -->
       <a
         href={`tel:${PHONE}`}
+        onclick="gtag_report_conversion()"
         class="inline-block text-2xl md:text-3xl font-display font-bold text-cta hover:text-cta-hover transition-colors mb-6"
       >
         {PHONE_DISPLAY}
@@ -53,6 +54,7 @@ const qualities = [
       <div class="flex justify-center mb-10">
         <a
           href={`tel:${PHONE}`}
+          onclick="gtag_report_conversion()"
           class="inline-flex items-center justify-center gap-2 bg-cta hover:bg-cta-hover text-cta-foreground font-body font-medium text-base px-8 py-4 rounded-lg transition-colors"
         >
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
